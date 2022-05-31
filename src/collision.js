@@ -59,7 +59,8 @@ export default class Collision{
     {
       this.yCollision = true;
     }
-    if (a.remainingHealthHearts==0){
+    if (a.remainingHealthHearts==0)
+    {
       a.manuallyKeyUpAllButtons();
       a.isMovementEnabled == false;
     }
