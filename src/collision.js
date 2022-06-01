@@ -50,7 +50,7 @@ export default class Collision{
     {
       this.xCollision = true;
     }
-
+    
     this.yCollision = false;
     this.yWindow1 = this.obj.y + this.obj.height;
     this.yWindow2 = this.obj2.y + this.obj2.height;
@@ -59,10 +59,7 @@ export default class Collision{
     {
       this.yCollision = true;
     }
-    if (a.remainingHealthHearts==0){
-      a.manuallyKeyUpAllButtons();
-      a.isMovementEnabled == false;
-    }
+
     if (this.xCollision == true && this.yCollision == true)
     {
       return true;
